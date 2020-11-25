@@ -1,4 +1,4 @@
-FROM dssat/dssat-pythia:develop
+FROM dssat/dssat-pythia:latest
 RUN apt-get install -y r-base-dev && \
 cd /app && \
 git clone https://github.com/DSSAT/supermaas-aggregate-pythia-outputs && \
