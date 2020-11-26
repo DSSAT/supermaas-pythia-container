@@ -13,7 +13,7 @@ RUN mkdir -p /data/{eth,base,weather} && \
 mkdir /userdata && \
 cd /data && \
 curl -O https://data.agmip.org/darpa/basedata-latest.tar.xz && \
-curl -O https://data.agmip.org/darpa/ethdata-latest.tar.xz
+curl -O https://data.agmip.org/darpa/ethdata-latest.tar.xz && \
 curl -O https://data.agmip.org/darpa/ethweather-historical-latest.tar.xz && \
 cd /data/base && tar xvf /data/basedata-latest.tar.xz && \
 cd /data/eth && tar xvf /data/ethdata-latest.tar.xz && \
