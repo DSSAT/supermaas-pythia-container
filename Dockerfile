@@ -10,7 +10,7 @@ echo 'Rscript aggregate-pythia-outputs.R /userdata/outputs/ /userdata/wmout.csv'
 
 # Load the data
 RUN mkdir -p /data/{eth,base,weather} && \
-mkdir /userdata && \
+mkdir -p /userdata/outputs && \
 cd /data && \
 curl -O https://data.agmip.org/darpa/basedata-latest.tar.xz && \
 curl -O https://data.agmip.org/darpa/ethdata-latest.tar.xz && \
